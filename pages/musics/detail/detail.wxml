@@ -1,0 +1,30 @@
+<!--pages/musics/detail/detail.wxml-->
+<view class='container'>
+  <image class='bg' src='{{album}}' mode='aspectFill'></image>
+  <view class='name'>{{name}}</view>
+  <view class='singer'>{{'-- ' + singer + ' --'}}</view>
+  <view class='img-box'>
+    <image class='img' src='{{album}}'></image>
+  </view>
+  <view class='box'>
+    <view class='lrc-box' animation='{{lrcAnimation}}'>
+      <view class='lrc' wx:for='{{playerLrc}}'>{{item.text}}</view>
+    </view>
+  </view>
+  <!-- <view class='iconBar'>
+    <view class='pre'>
+      <image class='img-pre' src=''></image>
+    </view>
+    <view class='play-box'>
+      <block wx:if="{{true}}">
+        <image class="play" src="" catchtap="bindPlay" data-num="{{playingSongsNum}}"></image>
+      </block>
+      <block wx:if="{{playing === true}}">
+        <image class="pause" src="" catchtap="bindPause" data-num="{{playingSongsNum}}"></image>
+      </block>
+    </view>
+    <view class='next'>
+      <image class='img-next' src=''></image>
+    </view>
+  </view> -->
+</view>

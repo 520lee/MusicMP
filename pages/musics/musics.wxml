@@ -1,0 +1,71 @@
+<view class="weui-panel weui-panel_access">
+  <icon class='search' bindlongtap='clearCache' bindtap='onSearch' type='search'>搜索</icon>
+  <input class='content' placeholder='输入歌名、歌手名' placeholder-class='placeholder' animation="{{searchAnimation}}" bindblur='bindSearch' bindinput='bindInput'></input>
+  <swiper class="item" current="2" bindchange="onBindchange">
+    <swiper-item wx:for="{{topList}}">
+      <view class="weui-panel__hd">{{item}}</view>
+      <scroll-view enable-back-to-top="{{true}}" bindscrolltolower="onMore" bindscroll="onScroll" scroll-y="{{true}}" style="height:92vh" class="weui-panel__bd">
+        <navigator wx:for="{{songsList}}" wx:key="{{item.id}}" data-id="{{index}}" bindtap="bindSong" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+          <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+            <image class="weui-media-box__thumb" src="{{item.album}}"/>
+          </view>
+          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <view class="weui-media-box__title">{{item.name}}</view>
+            <view class="weui-media-box__desc">{{item.singer}}</view>
+          </view>
+        </navigator>
+
+        <!--加载更多-->
+        <!-- <view class="weui-loadmore">
+          <view class="weui-loading"></view>
+          <view class="weui-loadmore__tips">加载中</view>
+        </view>
+        <view class="weui-loadmore weui-loadmore_line">
+          <view class="weui-loadmore__tips weui-loadmore__tips_in-line">暂无数据</view>
+        </view> -->
+        <!--加载更多-->
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+</view>
+
+<!-- <view class="player"> -->
+  <image id="musicplay" animation="{{playerAnimation}}" src="{{playBar.album}}" catchtap="musicPlaySwith">播放logo</image>
+  <!-- <text class="musiclrc" bindtap='onTap'>{{playerLrc}}</text> -->
+  <view class="musiclrc" bindtap='onTap'>{{playerLrc}}</view>
+<!-- </view> -->
+<view class="playBar" animation="{{musicAnimation}}" bindtap='onTap'>
+    <image class='img' catchtap='tapImage' src='{{playBar.album}}' animation="{{imageAnimation}}">
+    <image class='status' animation="{{textAnimation}}" src="{{playing?'/images/music/icon-pause.png':'/images/music/icon-play.png'}}"></image>
+    </image>
+      <view class="title" animation="{{textAnimation}}">{{playBar.name}}</view>
+      <view class="singer" animation="{{textAnimation}}">{{playBar.singer}}</view>
+</view>
+<!-- <audio src="{{playBar.dataUrl}}" id="musicbox" author="{{playBar.singer}}" poster="{{playBar.album}}" controls name="{{playBar.name}}" bindplay="onAudioPlay" bindpause="onAudioPause" bindtimeupdate="onAudioChange" bindended="onAudioEnd" animation="{{musicAnimation}}"
+  action="{{action}}">
+</audio> -->
+<!-- pages/musics/musics.wxml
+<scroll-view class='container' scroll-y='true' style='height:990rpx' bindscrolltolower='bindscrolltolower'>
+  <view class='topList'>
+    <view class='top' wx:for='{{topList}}' style="{{index == topid ? 'background-color: #D3EFB0; border: 1px solid #D3EFF0; color: #fff' : ''}}" bindtap="bindTop" data-topid='{{index}}'>{{item}}</view>
+  </view>
+  <view class='list'>
+    <view class='song' wx:for='{{songsList}}' style="{{index == id ? 'border: 1px solid green' : ''}}" bindtap="bindSong" data-id='{{index}}'>
+      <text class='index'>{{index+1}}</text>
+      <text class='txt'>{{item.name}}</text>
+    </view>
+   </view> 
+</scroll-view>
+<view class='bar' bindtap='onTap'>
+  <image class='img' src='{{playBar.album}}'></image>
+  <view class='title'>
+    <text class='name'>{{playBar.name}}</text>
+    <text class='singer'>{{playBar.singer}}</text>
+  </view>
+  <block wx:if="{{playing === false}}">
+    <image class="play" src="../../images/music/icon-play.png" catchtap="bindPlay" data-num="{{playingSongsNum}}"></image>
+  </block>
+  <block wx:if="{{playing === true}}">
+    <image class="pause" src="../../images/music/icon-pause.png" catchtap="bindPause" data-num="{{playingSongsNum}}"></image>
+  </block>
+</view> -->

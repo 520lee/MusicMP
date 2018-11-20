@@ -1,0 +1,251 @@
+ #musicbox {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  width: 0;
+  overflow: hidden;
+  z-index: 10;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.search{
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 25px;
+  height: 25px;
+  z-index: 10;
+}
+
+.content{
+  position: absolute;
+  top: 10px;
+  width: 145px;
+  right: -145px;
+  font-size: 12px;
+}
+
+.item{
+  width: 750rpx;
+  height: 1111rpx;
+}
+
+/* .media-rank {
+  position: absolute;
+  left: 20px;
+  color: #fff;
+  bottom: 0px;
+  text-shadow: 0 0 5px #ccc;
+} */
+
+.musiclrc {
+  position: absolute;
+  bottom: 1px;
+  right: 12px;
+  font-size: 13px;
+  /* color: #0dadee; */
+  /* color: #7ACB0A; */
+  color: #8BE812;
+  z-index: 11;
+}
+
+ #musicplay {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  right: 12px;
+  bottom: 25px;
+  border-radius: 50%;
+  z-index: 11;
+  /* background-image: url(../../public/images/icons/musicplayer.png); */
+  background-size: 35px 35px;
+} 
+
+/*修改默认audio样式;*/
+
+/* .wx-audio-default {
+  width: 100%;
+} */
+
+.player{
+  width: 696rpx;
+  height: 150rpx;
+  position: absolute;
+  left: 27rpx;
+  bottom: 5rpx;
+}
+
+.playBar{
+  position: fixed;
+  width: 0;
+  height: 120rpx;
+  left: 0;
+  bottom: 5rpx;
+  z-index: 10;
+   background-color: #fff; 
+}
+
+.img{
+  width: 0;
+  height: 120rpx;
+  z-index: 11; 
+}
+
+.status{
+  top:23px;
+  left:45rpx;
+  width:15px;
+  height:15px;
+  position:absolute;
+  transform:rotateX(90deg);
+  -webkit-transform:rotateX(90deg); /* Safari and Chrome */
+  -moz-transform:rotateX(90deg); 
+}
+
+.title{
+  font-size: 15px;
+  top:5px;
+  left:165rpx;
+  color: #0dadee;
+  position:absolute;
+  transform:rotateX(90deg);
+  -webkit-transform:rotateX(90deg); /* Safari and Chrome */
+  -moz-transform:rotateX(90deg);
+}
+
+.singer{
+  bottom: 12px;
+  color: #0dadee;
+  font-size: 14px;
+  left:165rpx;
+  position:absolute;
+  transform:rotatex(90deg);
+  -webkit-transform:rotateX(90deg); /* Safari and Chrome */
+  -moz-transform:rotateX(90deg);
+}
+
+.weui-panel{
+  margin-top:0;
+}
+
+.weui-panel__hd{
+  padding:2vh 3vh;
+  height: 4vh;
+  line-height: 4vh;
+}
+
+ /* pages/musics/musics.wxss 
+.topList{
+  display: flex;
+  flex-direction: row;
+}
+
+.top{
+  width: 250rpx;
+  height: 80rpx;
+  font-size: 20px;
+  line-height: 80rpx;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.list{
+  display: flex;
+  flex-direction: column;
+}
+
+.song{
+  width: 100%;
+  height: 100rpx;
+  flex-direction: row;
+  border-radius: 10px;
+  border-top: 1px solid #ccc;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.index{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.txt{
+  display: inline-block; 
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  margin-left: 3px;
+}
+
+.bar{
+  bottom: 0;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 62px;
+  background-color: white;
+  border-top: 1px solid #ccc; 
+}
+
+.img{
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-left: 5px;
+  animation: rotates 10s linear infinite;
+}
+
+.title{
+  display: inline-block; 
+  width: 222px;
+  height: 60px;
+  margin-left: 20px;
+  line-height: 60px;
+}
+
+.name{
+  width: 200px;
+  height: 22px;
+  display: block;
+  margin-top: -10px;
+  font-size: 20px;
+}
+
+.singer{
+  width: 200px;
+  height: 40px;
+  display: block;
+  font-size: 16px;
+}
+
+.play{
+  width: 60px;
+  height: 60px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.pause{
+  width: 60px;
+  height: 60px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+@keyframes rotates{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+} */

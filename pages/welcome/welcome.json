@@ -1,0 +1,8 @@
+{   
+      "navigationBarBackgroundColor": "#ccc",
+      "navigationBarTextStyle": "white",
+      "navigationBarTitleText": "欢迎使用小程序",
+      "backgroundColor": "#eeeeee",
+      "backgroundTextStyle": "light",
+      "enablePullDownRefresh": false
+}

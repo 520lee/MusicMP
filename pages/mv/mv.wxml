@@ -1,0 +1,5 @@
+<view class='container'>
+  <view class='singer' wx:for='{{list}}'>
+    <image class='img' src='{{item.imgSrc}}' bindtap="bindTop" data-id='{{item.id}}'>{{item.id}}</image>
+  </view>
+</view>

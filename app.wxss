@@ -1,0 +1,12 @@
+@import "dist/style/weui.wxss";
+@import "dist/font/iconfont.wxss";
+text{
+    /* font-family: MicroSoft Yahei; */
+    font-family: 楷体;
+    font-size: 24rpx;
+    color: #666;
+}
+
+input{
+    font-family: MicroSoft YaHei;
+}

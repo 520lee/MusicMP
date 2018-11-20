@@ -1,0 +1,13 @@
+<view class='container'>
+  <!-- <image class='user-avatar' src='/images/avatar/5.png'></image> -->
+  <view class='avatar'>
+      <open-data class='user-avatar' type="userAvatarUrl"></open-data>
+  </view>
+  <view class='message'>
+      	<text class='user-name'>Hello,</text>
+        <open-data class='user-name' type="userNickName"></open-data>
+  </view>
+  <view class='moto-container' bindtap='onTap'>
+      <text class='moto'>开启你的小程序之旅</text>
+  </view>
+</view>

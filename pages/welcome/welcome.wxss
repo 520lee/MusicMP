@@ -1,0 +1,42 @@
+page{
+    background-color: #ccc;
+}
+text{
+    font-family: MicroSoft Yahei;
+    font-weight: bold;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar{
+    width: 200rpx;
+    height: 200rpx;
+    margin-top: 150rpx;
+    border-radius: 100%;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+.message{
+    margin-top: 100rpx;
+}
+
+.user-name{
+      font-size: 35rpx; 
+}
+
+.moto-container{
+    width: 280rpx;
+    height: 80rpx;
+    text-align: center;
+    margin-top: 150rpx;
+    border: 1px solid #405f80;
+    border-radius: 8px;
+}
+
+.moto{
+    font-size: 28rpx;
+    line-height: 80rpx;
+}

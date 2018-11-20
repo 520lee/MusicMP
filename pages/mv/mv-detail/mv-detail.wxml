@@ -1,0 +1,6 @@
+<scroll-view class='container'  scroll-y='true' style='height: 1334rpx' bindscrolltolower="onMore">
+  <view class='weui-media-box weui-media-box_appmsg singer' wx:for='{{mvsList}}' bindtap="bindTop" data-videoId='{{item.videoId}}'>
+    <image mode='aspectFit' class='img' src='{{item.bigHeadImgUri}}' ></image>
+    <text class='weui-media-box__title'>{{item.title}}</text>
+  </view>
+</scroll-view>

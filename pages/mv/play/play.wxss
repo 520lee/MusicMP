@@ -1,0 +1,11 @@
+.container{
+  margin: 100rpx auto;
+}
+
+#video{
+  width: 750rpx;
+}
+
+.btn{
+  margin: 10rpx auto;
+}

@@ -1,0 +1,39 @@
+{
+    "pages": [
+        "pages/welcome/welcome",
+        "pages/musics/musics",
+        "pages/musics/detail/detail",
+        "pages/mv/mv",
+        "pages/mv/mv-detail/mv-detail",
+        "pages/mv/play/play",
+        "pages/movies/movies",
+        "pages/movies/more-movie/more-movie",
+        "pages/movies/movie-detail/movie-detail"
+    ],
+    "window": {
+      "navigationBarBackgroundColor": "#b3d4db"
+    },
+    "tabBar": {
+        "borderStyle": "white",
+        "list": [
+            {
+                "pagePath": "pages/musics/musics",
+                "text": "音乐",
+                "iconPath": "/images/tab/yuedu.png",
+                "selectedIconPath": "/images/tab/yuedu_hl.png"
+            },
+            {
+              "pagePath": "pages/mv/mv",
+              "text": "MV",
+              "iconPath": "/images/tab/yuedu.png",
+              "selectedIconPath": "/images/tab/yuedu_hl.png"
+            },
+            {
+                "pagePath": "pages/movies/movies",
+                "text": "电影",
+                "iconPath": "/images/tab/dianying.png",
+                "selectedIconPath": "/images/tab/dianying_hl.png"
+            }
+        ]
+    }
+}
